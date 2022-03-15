@@ -37,11 +37,38 @@ html {
 	margin-top: 6vh;
 }
 
-#center {
+.leftbar {
+	width: 7%;
+	height: 23vw;
+	float: left;
+	margin: 2%;
+	margin-right: -100%;
+	margin-left: 13.5%;
+	margin-top: 1.6%;
+	background: #8f8f8f;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+.l_img
+{
+	display: block;
+	max-width: 53%;
+	max-height: 53%;
+	margin: auto;
+	padding: 5%;
+	text-align: center;
+}
+
+#centerimg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 3vh;
+	margin-left: auto;
+	margin-right: auto;
+	width: 53.5%;
+
 }
 
 #centerimg {
@@ -52,4 +79,63 @@ html {
 
 #clust {
 	margin-bottom: -0.3vh;
+}
+
+.rightbar {
+	width: 7%;
+	height: 23vw;
+	float: right;
+	margin-top: -31.2%;
+	margin-right: 14%;
+	background: #8f8f8f;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+.r_img
+{
+	display: block;
+	max-width: 53%;
+	max-height: 53%;
+	margin: auto;
+	padding: 5%;
+	text-align: center;
+}
+
+.r2_img
+{
+	display: block;
+	max-width: 53%;
+	max-height: 53%;
+	margin-top: -10%;
+	/* margin: auto; */
+	padding: 5%;
+	text-align: center;
+}
+
+#b1
+{
+	margin-left: 0;
+    width: 50%;
+    float: right;
+    
+}
+
+#b2
+{
+    width: 50%;
+    float: left;
+    /* margin-right: 0; */
+}
+
+#b3
+{
+    width: 40%;
+	float: left;
+}
+
+#b4
+{
+    width: 40%;
+	float: left;
 }
