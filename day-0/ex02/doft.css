@@ -1,0 +1,55 @@
+html {
+	background-color: #5d5f60;
+}
+
+#header {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2vh;
+	width: 75%;
+	height: 13vh;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px black;
+	background-color: #8f8f8f;
+}
+
+#logo {
+	width: 30%;
+}
+
+#loupe {
+	margin-left: auto;
+	margin-top: auto;
+}
+
+.icons {
+	width: 2%;
+	height: 90%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#close {
+	display: block;
+	margin-top: 6vh;
+}
+
+#center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+}
+
+#centerimg {
+	border: solid #8f8f8f;
+	border-width: 10px;
+	border-radius: 10px;
+}
+
+#clust {
+	margin-bottom: -0.3vh;
+}
