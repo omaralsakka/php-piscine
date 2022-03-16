@@ -1,0 +1,52 @@
+html {
+	background-color: lightcyan;
+}
+
+#logo {
+	max-width: 10vw;
+}
+
+body{
+	width: 80vw;
+	margin: auto;
+}
+
+table {
+	width: 200px;
+}
+.row {
+	display: flex;
+	text-align: center;
+}
+.elem {
+	background-color: green;
+	width: 5.5%;
+	float: left;
+	height: 100%;
+	margin: 0.5px;
+	padding:0.2vw;
+	border: solid black;
+	border-radius: 5px;
+}
+.emptycell {
+	width: 6%;
+	float: left;
+	height: 100%;
+	margin: 0.5px;
+	padding: 0.2vw;
+	min-width: 3.8vw;
+}
+.weight {
+	font-size: 0.5vw;
+	text-align: right;
+}
+.letter {
+	font-size: 1.5vw;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nb {
+	font-size: 0.5vw;
+	text-align: left;
+}	
