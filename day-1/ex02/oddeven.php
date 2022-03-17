@@ -9,7 +9,10 @@
 		{
 			$nb = trim($nb);
 			if (!(is_numeric($nb)))
-				echo "'$nb' is not a number";
+			{
+				echo "'$nb' is not a number \n";
+				continue;
+			}
 			$res = intval($nb);
 			if ($res % 2 == 1)
 				echo "The number $res is odd";
