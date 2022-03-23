@@ -7,7 +7,6 @@ function ft_up($match)
 
 function ft_filter($match)
 {
-	
 	$pattern = "/\".*?\"|>.*?</";
 	$result = preg_replace_callback($pattern, 'ft_up', $match[0]);
 	return ($result);
@@ -15,7 +14,6 @@ function ft_filter($match)
 
 function ft_catch($match)
 {
-	
 	$pattern = "/(title=.*?<)|>.*?</";
 	$result = preg_replace_callback($pattern, 'ft_filter', $match[0]);
 	return ($result);
