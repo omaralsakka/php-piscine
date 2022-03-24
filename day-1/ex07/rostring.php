@@ -12,6 +12,6 @@
 			echo implode(" ",$arr) . "\n";
 		}
 		else
-			echo "$argv[1]\n";
+			echo $argv[1] . "\n";
 	}
 ?>
