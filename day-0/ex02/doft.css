@@ -81,12 +81,26 @@ html {
 	margin-bottom: -0.3vh;
 }
 
+/* .rightbar {
+	width: 7.2%;
+	height: 23vw;
+	float: right;
+	margin-top: -63vh;
+	/* margin-top: -31.2%; */
+	/* margin-right: 14%;
+	background: #8f8f8f;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+} */
+
 .rightbar {
 	width: 7.2%;
 	height: 23vw;
 	float: right;
-	margin-top: -31.2%;
-	margin-right: 14%;
+	margin: 2%;
+	margin-left: -100%;
+	margin-right: 13.5%;
+	margin-top: -63vh;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -151,12 +165,7 @@ html {
 	box-shadow: 10px 10px 5px black;
 	margin: -4% 0 0 11%;
 }
-
 #lowerbox > p {
 	font-size: 1vw;
 	font-family: 'Lucida Sans Regular';
-}
-
-.formpart {
-
 }
