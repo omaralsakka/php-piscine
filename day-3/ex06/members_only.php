@@ -4,7 +4,6 @@
         header('HTTP/1.0 401 Unauthorized');
         header('WWW-Authenticate: Basic realm=\'\'Member area\'\'');
 		echo "<html><body>That area is accessible for members only</body></html>\n";
-		exit;
 	}
 	else
 	{
