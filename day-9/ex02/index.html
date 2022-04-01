@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TO DO</title>
-	<script src="todo.js"></script>
 	<style>
 		#title{
 			
@@ -45,6 +44,10 @@
 			box-shadow: 6px 6px 9px rgba(128, 128, 128, 0.582);
 			font-family: 'Courier New', Courier, monospace;
 			font-size: large;
+			transition: background-color .6s ease;
+		}
+		#button:hover{
+			background-color: rgb(209, 209, 209);
 		}
 	</style>
 </head>
@@ -53,11 +56,12 @@
 		<h1>TO DO LIST!</h1>
 	</div>
 	<div id="ft_list">
-		<div id="item" onclick="removeItem(this.id)">
+		<!-- <div id="item" onclick="removeItem(this.id)">
 			<li>Coffee</li>
-		</div>
+		</div> -->
 	</div>
 	<br><br>
 	<button id="button" onclick="addItem()">New</button>
+	<script src="todo.js"></script>
 </body>
 </html>
