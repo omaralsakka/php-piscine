@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+	crossorigin="anonymous"></script>
+	<style>
+		.calculator{
+			display: block;
+			border: dotted 1px;
+			border-color: goldenrod;
+			width: 20%;
+			margin: auto;
+			margin-top: 25vh;
+			padding: 8vw;
+		}
+		#lNumb{
+			width: 40%;
+			padding: 0.2vw;
+			border: outset 2px;
+			border-radius: 10%;
+			border-color: red;
+		}
+		#signs{
+			width: 10%;
+			padding: 0.1vw;
+			border: inset 2px;
+			border-radius: 10%;
+			border-color: green;
+		}
+		#rNumb{
+			width: 40%;
+			padding: 0.2vw;
+			border: outset 2px;
+			border-radius: 10%;
+			border-color: red;
+		}
+		#sub{
+			width: 20%;
+			padding: 0.1vw;
+			border: inset 2px;
+			border-radius: 10%;
+			border-color: violet;
+			padding: 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("#sub").on("click", function(){
+				let x = Number($("#lNumb").val());
+				let y = Number($("#rNumb").val());
+				let sign = $("#signs").val();
+				if (x < 0 || y < 0)
+					alert("Error :(");
+				else if ((x > 0 && y == 0) && (sign == "%" || sign == "/")){
+					alert("It’s over 9000!");
+					console.log("It’s over 9000!");
+				}
+				else{
+					alert(eval(x + sign + y) );
+					console.log(eval(x + sign + y) );
+				}
+			})
+		})
+	</script>
+	<title>Calculator</title>
+</head>
+<body>
+	<div class="calculator">
+		<input type="number" id="lNumb">
+		<select name="sign" id="signs">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="number" id="rNumb">
+		<br><br>
+		<button type="button" id="sub">Try me!</button>
+	</div>
+</body>
+</html>
