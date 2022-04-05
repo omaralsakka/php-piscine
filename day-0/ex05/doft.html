@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="doft.css">
+	<title>Day of the 42</title>
+	<script>
+		let choc = 0;
+		function displayChat(){
+			document.getElementById("lowerbox").style.display="block";
+		}
+		function greetings(){
+			alert("Welcome to the 42 network!")
+			document.getElementById("lowerbox").style.display="none";
+		}
+		function hitHead(){
+			let audio = new Audio("resources/Punch.wav");
+			audio.play();
+		}
+		function take(){
+			choc++;
+			if (choc > 4)
+				alert("too much sugar darling :S !");
+			else
+				alert("you got " + choc + " candy");
+		}
+		function clean(){
+			document.getElementById("lowerbox").style.display="none";
+		}
+		function sett(){
+			if (document.getElementById("settings").style.display !== "none"){
+				document.getElementById("settings").style.display = "none";}
+			else{
+				document.getElementById("settings").style.display = "block";}
+		}
+		function look(){
+			let mark = document.getElementById("markdown");
+			let cImg = document.getElementById("centerimg");
+			if (mark.style.display !== "none"){
+				cImg.style.display = "flex";
+				mark.style.display = "none";
+			}
+			else{
+				cImg.style.display = "none";
+				mark.style.display = "flex";
+			}
+		}
+		function imgZoom(){
+			let zoom = document.getElementById("clust");
+			if (zoom.style.width === "53%")
+				zoom.style.width = "80%";
+			else
+				zoom.style.width = "53%";
+		}
+	</script>
+</head>
+<body>
+	<header id="header">
+		<div id="logo">
+			<img src="resources/day_of_the_42.png" alt="Day of the 42" 
+			style="width:100%; padding: 2%;">
+		</div>
+		<div id="loupe">
+			<img id="glasses" src="resources/loupe.png" alt="loupe" onclick="imgZoom()">
+		</div>
+		<div class="icons">
+			<div id="reload">
+				<a href="https://www.disney.com" target="_blank">
+					<img src="resources/reload.png" title="Start from the beginning" 
+					alt="reload" style="width:80%">
+				</a>
+			</div>
+			<div id="close">
+				<a href="https://www.relaischateaux.com" target="_blank">
+					<img src="resources/close.gif" title="Disconnect" 
+					alt="close" style="width:80%">
+				</a>
+			</div>
+		</div>
+	</header>
+	<div class="leftbar">
+		<a href="https://apply.hive.fi/users/sign_up" target="__blank">
+			<img class="l_img" title="Advance" src="resources/arrow.png" alt="Advance">
+		</a>
+		<img class="l_img" title="Take" src="resources/main.png" alt="Take" onclick="take()">
+		<img class="l_img" title="Look" src="resources/oeil.png" alt="Look" onclick="look()">
+		<img class="l_img" title="Use" src="resources/outil.png" alt="Use" onclick="sett()">
+		<img class="l_img" title="Speak" src="resources/chat-icon.png" alt="Speak"
+		onclick="displayChat()">
+	</div>
+	<div id="markdown">
+		<iframe width="100%" height="480" src="https://my.matterport.com/show/?m=aynzcHbDp48"
+		frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+	</div>
+	<div id="centerimg">
+			<img id="clust" src="resources/cluster.jpg" alt="cluster image"
+			usemap="#clustmap">
+	</div>
+	<map name="clustmap">
+			<area title="imac" shape="rect" coords="1050, 450, 1250, 590" 
+			href="https://www.apple.com" target="_blank" alt="imac device">
+			<area title="work chair" shape="rect" coords="450, 550, 550, 450"
+			href="https://www.ikea.com" target="_blank" alt="Ikea chair">
+	</map>
+	<div class="rightbar">
+		<a href="https://www.hive.fi/en/curriculum" target="__blank">
+			<img class="r_img" title="student's guide" alt="guide book" src="resources/book.png">
+		</a>
+		<img class="r_img" title="clean your screen" alt="towel" src="resources/towel.png"
+		onclick="clean()">
+		<div id="bricks">
+			<div class="r2_img" title="hit your head here" alt="brick" onclick="hitHead()">
+				<img id="b1" src="resources/brick.jpg">
+				<img id="b2" src="resources/brick.jpg">
+				<img id="b3" src="resources/brick.jpg">
+				<img id="b4" src="resources/brick.jpg">
+			</div>
+			<div class="r2_img" title="hit your head here" alt="brick" onclick="hitHead()">
+				<img id="b1" src="resources/brick.jpg">
+				<img id="b2" src="resources/brick.jpg">
+				<img id="b3" src="resources/brick.jpg">
+				<img id="b4" src="resources/brick.jpg">
+			</div>
+		</div>
+	</div>
+	<div id="lowerbox">
+		<p>vous <span style="font-size: 2vw;">entrez</span> alors dans une grande piece remplie</p>
+		<p style="text-shadow: 15px 5px 3px red;">d'ordinateurs...</p>
+		<p>- <i>Bonjour, vous êtes nouveau ici ?</i></p>
+		<form class="formpart" action="#">
+			<input type="text" size="42" 
+			style="padding: 1px; margin-right: 5px; border: 2px inset rgb(182, 179, 179);">
+			<input id="submit" type="submit" value="Repondre" onclick="greetings()">
+		</form>
+	</div>
+	<div id="settings">
+		<h1>
+			Settings<br> 
+			1- click on the students to listen/read for them.<br> 
+			2- click on the elements on the left and right bar for some actions.<br> 
+			3- use the towel on the right to clean the screen from the messages.<br> 
+			4- have fun :)
+		</h1>
+	</div>
+</body>
+</html>
