@@ -13,7 +13,7 @@
 				echo trim($data['user']) . " ";
 				echo trim($data['line']) . " ";
 				$time = date("M d H:i", $data['time']);
-				echo $time . " \n";
+				echo $time . " \n";		
 			}
 		}
 	}
