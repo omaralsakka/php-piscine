@@ -44,7 +44,7 @@ html {
 
 .leftbar {
 	width: 8.2%;
-	height: 22vw;
+	height: 46vh;
 	float: left;
 	margin: 2%;
 	margin-right: -100%;
@@ -88,14 +88,14 @@ html {
 	box-shadow: 10px 10px 12px black;
 }
 
-.rightbar {
+#rightbar {
 	width: 8.2%;
-	height: 22vw;
+	height: 46vh;
 	float: right;
 	margin: 2%;
 	margin-left: -100%;
 	margin-right: 13.5%;
-	margin-top: -62.5vh;
+	margin-top: -63.5vh;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -168,7 +168,7 @@ html {
 
 #settings {
 	display:none;
-	margin:auto;
+	margin:2vh auto;
 	background:#88ff89;
 	border-radius: 10px;
 	max-width: 25%;
@@ -194,4 +194,48 @@ html {
 	border-width: 10px;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
+}
+
+#lady1{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-right: 40vw;
+}
+
+#guy1{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-top: 15vh;
+	margin-right: 25vw;
+}
+
+#lady2{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-right: 15vw;
+}
+
+#guy2{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-left: 8vw;
 }

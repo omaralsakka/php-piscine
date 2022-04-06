@@ -5,55 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="doft.css">
 	<title>Day of the 42</title>
-	<script>
-		let choc = 0;
-		function displayChat(){
-			document.getElementById("lowerbox").style.display="block";
-		}
-		function greetings(){
-			alert("Welcome to the 42 network!")
-			document.getElementById("lowerbox").style.display="none";
-		}
-		function hitHead(){
-			let audio = new Audio("resources/Punch.wav");
-			audio.play();
-		}
-		function take(){
-			choc++;
-			if (choc > 4)
-				alert("too much sugar darling :S !");
-			else
-				alert("you got " + choc + " candy");
-		}
-		function clean(){
-			document.getElementById("lowerbox").style.display="none";
-		}
-		function sett(){
-			if (document.getElementById("settings").style.display !== "none"){
-				document.getElementById("settings").style.display = "none";}
-			else{
-				document.getElementById("settings").style.display = "block";}
-		}
-		function look(){
-			let mark = document.getElementById("markdown");
-			let cImg = document.getElementById("centerimg");
-			if (mark.style.display !== "none"){
-				cImg.style.display = "flex";
-				mark.style.display = "none";
-			}
-			else{
-				cImg.style.display = "none";
-				mark.style.display = "flex";
-			}
-		}
-		function imgZoom(){
-			let zoom = document.getElementById("clust");
-			if (zoom.style.width === "53%")
-				zoom.style.width = "80%";
-			else
-				zoom.style.width = "53%";
-		}
-	</script>
+	
 </head>
 <body>
 	<header id="header">
@@ -96,14 +48,34 @@
 	<div id="centerimg">
 			<img id="clust" src="resources/cluster.jpg" alt="cluster image"
 			usemap="#clustmap">
+			<div id="lady1">
+				<h3>why is it so cold in here,<br>bocal help please</h3>
+			</div>
+			<div id="guy1">
+				<h3>I am wondering in the unknown,<br>please let me be</h3>
+			</div>
+			<div id="lady2">
+				<h3>Vole voce she,<br>avec moi</h3>
+			</div>
+			<div id="guy2">
+				<h3>I am walking away,<br>from the troubles in my life</h3>
+			</div>
 	</div>
 	<map name="clustmap">
-			<area title="imac" shape="rect" coords="1050, 450, 1250, 590" 
+			<area title="imac" shape="rect" coords="1080, 450, 1310, 590" 
 			href="https://www.apple.com" target="_blank" alt="imac device">
-			<area title="work chair" shape="rect" coords="450, 550, 550, 450"
+			<area title="work chair" shape="rect" coords="450, 650, 550, 450"
 			href="https://www.ikea.com" target="_blank" alt="Ikea chair">
+			<area title="lady1" shape="rect" coords="50, 320, 100, 550" 
+			onclick="lady1()" alt="student">
+			<area title="guy1" shape="rect" coords="220, 350, 260, 450" 
+			onclick="guy1()" alt="student">
+			<area title="lady2" shape="rect" coords="520, 330, 560, 380" 
+			onclick="lady2()" alt="student">
+			<area title="guy2" shape="rect" coords="630, 330, 690, 380" 
+			onclick="guy2()" alt="student">
 	</map>
-	<div class="rightbar">
+	<div id="rightbar">
 		<a href="https://www.hive.fi/en/curriculum" target="__blank">
 			<img class="r_img" title="student's guide" alt="guide book" src="resources/book.png">
 		</a>
@@ -143,5 +115,6 @@
 			4- have fun :)
 		</h1>
 	</div>
+	<script src="doft.js"></script>
 </body>
 </html>

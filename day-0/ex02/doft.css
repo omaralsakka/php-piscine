@@ -44,7 +44,7 @@ html {
 
 .leftbar {
 	width: 8.2%;
-	height: 22vw;
+	height: 46vh;
 	float: left;
 	margin: 2%;
 	margin-right: -100%;
@@ -84,12 +84,12 @@ html {
 
 .rightbar {
 	width: 8.2%;
-	height: 22vw;
+	height: 46vh;
 	float: right;
 	margin: 2%;
 	margin-left: -100%;
 	margin-right: 13.5%;
-	margin-top: -62.5vh;
+	margin-top: -63.5vh;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
