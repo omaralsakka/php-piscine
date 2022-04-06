@@ -61,30 +61,30 @@ function clean(){
 	document.getElementById("guy2").style.display="none";
 }
 function sett(){
-	if (document.getElementById("settings").style.display !== "none"){
-		document.getElementById("settings").style.display = "none";}
-	else{
+	if (document.getElementById("settings").style.display !== "block"){
 		document.getElementById("settings").style.display = "block";}
+	else{
+		document.getElementById("settings").style.display = "none";}
 }
 function look(){
 	let mark = document.getElementById("markdown");
 	let r_bar = document.getElementById("rightbar");
 	let cImg = document.getElementById("centerimg");
-	if (mark.style.display !== "none"){
-		cImg.style.display = "flex";
-		mark.style.display = "none";
-		r_bar.style.marginTop = "-63.5vh";
-	}
-	else{
-		r_bar.style.marginTop = "-19.5vw";
+	if (mark.style.display !== "flex"){
 		cImg.style.display = "none";
 		mark.style.display = "flex";
+		r_bar.style.marginTop = "-19.5vw";
+	}
+	else{
+		r_bar.style.marginTop = "-63.5vh";
+		cImg.style.display = "flex";
+		mark.style.display = "none";
 		
 	}
 }
 function imgZoom(){
 	let zoom = document.getElementById("clust");
-	if (zoom.style.width === "53%")
+	if (zoom.style.width !== "80%")
 		zoom.style.width = "80%";
 	else
 		zoom.style.width = "53%";
