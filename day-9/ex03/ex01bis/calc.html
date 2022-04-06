@@ -53,7 +53,7 @@
 				let x = Number($("#lNumb").val());
 				let y = Number($("#rNumb").val());
 				let sign = $("#signs").val();
-				if (x < 0 || y < 0)
+				if (x < 0 || y < 0 || (!x || !y))
 					alert("Error :(");
 				else if ((x > 0 && y == 0) && (sign == "%" || sign == "/")){
 					alert("It’s over 9000!");

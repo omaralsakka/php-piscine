@@ -53,7 +53,7 @@
 			const signs = document.getElementById("signs");
 			var val1 = Number(x.value), val2 = Number(y.value), sign = signs.value;
 
-			if (val1 < 0 || val2 < 0)
+			if (val1 < 0 || val2 < 0 || (!val1 || !val2))
 				alert("Error :(");
 			else if ((val1 > 0 && val2 == 0) && (sign == "%" || sign == "/")){
 				alert("It’s over 9000!");
