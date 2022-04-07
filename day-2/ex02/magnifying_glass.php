@@ -14,7 +14,7 @@ function ft_filter($match)
 
 function ft_catch($match)
 {
-	$pattern = "/(title=.*?<)|>.*?</";
+	$pattern = "/(title=.*?<)|>.*?</i";
 	$result = preg_replace_callback($pattern, 'ft_filter', $match[0]);
 	return ($result);
 }
@@ -22,7 +22,7 @@ function ft_catch($match)
 		exit ();
 	$file = fopen($argv[1], 'r');
 	$page = "";
-	$pattern = "/<a.*</";
+	$pattern = "/<a.*</i";
 	while (!feof($file))
 		$page .= fgets($file);
 	$result = preg_replace_callback($pattern, 'ft_catch', $page);
