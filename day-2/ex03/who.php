@@ -11,8 +11,8 @@
 			if ($data['type'] == 7)
 			{
 				echo trim($data['user']) . " ";
-				echo trim($data['line']) . " ";
-				$time = date("M d H:i", $data['time']);
+				echo trim($data['line']) . "  ";
+				$time = date("M  j H:i", $data['time']);
 				echo $time . " \n";		
 			}
 		}
