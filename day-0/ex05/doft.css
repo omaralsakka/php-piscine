@@ -46,10 +46,7 @@ html {
 	width: 8.2%;
 	height: 46vh;
 	float: left;
-	margin: 2%;
-	margin-right: -100%;
-	margin-left: 13.5%;
-	margin-top: 3vh;
+	margin: 3vh -100% 0 13.5%;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -92,10 +89,7 @@ html {
 	width: 8.2%;
 	height: 46vh;
 	float: right;
-	margin: 2%;
-	margin-left: -100%;
-	margin-right: 13.5%;
-	margin-top: -63.5vh;
+	margin: -63.5vh 13.5% 0 -100%;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
