@@ -81,20 +81,7 @@
 		</a>
 		<img class="r_img" title="clean your screen" alt="towel" src="resources/towel.png"
 		onclick="clean()">
-		<div id="bricks">
-			<div class="r2_img" title="hit your head here" alt="brick" onclick="hitHead()">
-				<img id="b1" src="resources/brick.jpg">
-				<img id="b2" src="resources/brick.jpg">
-				<img id="b3" src="resources/brick.jpg">
-				<img id="b4" src="resources/brick.jpg">
-			</div>
-			<div class="r2_img" title="hit your head here" alt="brick" onclick="hitHead()">
-				<img id="b1" src="resources/brick.jpg">
-				<img id="b2" src="resources/brick.jpg">
-				<img id="b3" src="resources/brick.jpg">
-				<img id="b4" src="resources/brick.jpg">
-			</div>
-		</div>
+		<div id="bricks" onclick="hitHead()"></div>
 	</div>
 	<div id="lowerbox">
 		<p>vous <span style="font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;">entrez</span> alors dans une grande piece remplie</p>
@@ -103,7 +90,7 @@
 		<form class="formpart" action="#">
 			<input type="text" size="68" 
 			style="padding: 1px; margin-right: 5px; border: 2px inset rgb(182, 179, 179);">
-			<input id="submit" type="submit" value="Repondre" onclick="greetings()">
+			<input id="sbmt" type="submit" value="Repondre" onclick="greetings()">
 		</form>
 	</div>
 	<div id="settings">
