@@ -43,13 +43,15 @@ html {
 }
 
 .leftbar {
-	width: 8.2%;
+	width: 7.3vw;
+	/* width: 8.2%; */
 	height: 46vh;
 	float: left;
-	margin: 2%;
+	margin: 3vh -100% 0 13.5%;
+	/* margin: 2%;
 	margin-right: -100%;
 	margin-left: 13.5%;
-	margin-top: 3vh;
+	margin-top: 3vh; */
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -58,8 +60,8 @@ html {
 .l_img
 {
 	display: block;
-	max-width: 45%;
-	max-height: 45%;
+	max-width: 50%;
+	max-height: 50%;
 	margin: auto;
 	padding: 5%;
 	text-align: center;
@@ -86,10 +88,7 @@ html {
 	width: 8.2%;
 	height: 46vh;
 	float: right;
-	margin: 2%;
-	margin-left: -100%;
-	margin-right: 13.5%;
-	margin-top: -63.5vh;
+	margin: -63.6vh 13.5% 0 -100%;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -154,12 +153,12 @@ html {
 	max-width: 25%;
 	max-height: 100%;
 	padding: 10px;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 	line-height: 3px;
 	box-shadow: 10px 10px 5px black;
 	margin: -4% 0 0 11%;
 }
-#lowerbox > p {
-	font-size: 1vw;
-	font-family: 'Lucida Sans Regular';
+#lowerbox > p, #p {
+	font-size: 0.8vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
