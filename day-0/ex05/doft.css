@@ -179,9 +179,9 @@ html {
 	font-family: 'Lucida Sans Regular';
 }
 
-#lowerbox > p {
-	font-size: 1vw;
-	font-family: 'Lucida Sans Regular';
+#lowerbox > p, #p {
+	font-size: 0.8vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #markdown{
