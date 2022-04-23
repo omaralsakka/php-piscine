@@ -9,7 +9,7 @@ red, green & blue.
 
 ⭐️ EX02 -> create a todo list that saves its list items with cookies.
 
-⭐️ EX03 -> re-do all the previous exercises but with JQuery.
+⭐️ EX03bis -> re-do all the previous exercises but with JQuery.
 
 ⭐️ EX04 -> re-do the todo list but with AJAX instead of cookies.
 
