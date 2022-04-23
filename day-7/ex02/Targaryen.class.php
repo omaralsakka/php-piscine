@@ -1,15 +1,16 @@
 <?php
 
 class Targaryen{
-	public function resistsFire(){
+	public function resistsFire()
+	{
 		return false;
 	}
-	function getBurned(){
+	function getBurned()
+	{
 
 		if ($this->resistsFire())
 			return ("emerges naked but unharmed");
-		else
-			return ("burns alive");
+		return ("burns alive");
 	}
 }
 

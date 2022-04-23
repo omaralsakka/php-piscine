@@ -1,2 +1,2 @@
-DELETE FROM db_oabdelfa.ft_table
-WHERE id < 6;
+DELETE FROM ft_table
+LIMIT 5;

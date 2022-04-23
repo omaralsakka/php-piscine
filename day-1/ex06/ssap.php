@@ -1,13 +1,12 @@
 #!/usr/bin/php
 <?php
 	$i = 0;
-	$x = 0;
 	$arr = array();
 	if ($argc < 2)
 		exit (0);
 	while (++$i < $argc)
 	{
-		$str = preg_replace('/\s\s+/', ' ',  $argv[$i]);
+		$str = preg_replace('/\s+/', ' ',  $argv[$i]);
 		$trm = trim($str);
 		if (strpos($trm, " "))
 		{
@@ -19,9 +18,6 @@
 			array_push($arr, $trm);
 	}
 	sort($arr);
-	while ($x < count($arr))
-	{
+	for ($x = 0; $x < count($arr); $x++)
 		echo "$arr[$x]\n";
-		$x++;
-	}
 ?>

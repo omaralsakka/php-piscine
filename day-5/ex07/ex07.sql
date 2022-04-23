@@ -1,3 +1,3 @@
-SELECT title OR summary FROM db_oabdelfa.film
-WHERE title LIKE "%42%" OR summary LIKE "%42%"
-ORDER BY duration; 
+SELECT title, summary FROM film 
+WHERE title like "%42%" OR summary like "%42%" 
+ORDER BY duration;

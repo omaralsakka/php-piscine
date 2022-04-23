@@ -1,10 +1,8 @@
 #!/usr/bin/php
 <?php
-	
 	while (1)
 	{
-		echo "Enter a number: ";
-		
+		echo "Enter a number: ";	
 		if ($nb = fgets(STDIN))
 		{
 			$nb = trim($nb);

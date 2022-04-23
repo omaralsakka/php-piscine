@@ -27,35 +27,37 @@ function ft_arth($a, $b, $sign)
 			break;
 	}
 }
-	if ($argc == 2)
-	{
+	if ($argc == 2){
 		$a = "";
 		$b = "";
+		$i = 0;
+		$cnt = 0;
 		$str = trim($argv[1]);
-		$str = preg_replace('/\s\s+/', '',  $str);
-		$str2 = str_split($str);
-		foreach($str2 as $char)
-		{
-			if (isSign($char))
-				$sign = $char;
-			elseif (!isSign($char) && !is_numeric($char))
-			{
-				echo "Syntax Error\n";
-				exit(0);
-			}
+		for($idx = 0; $idx < strlen($str); $idx++){
+			if (isSign($str[$idx]))
+				$cnt += 1;
+			if ($str[$idx] == "-" && $cnt > 0 && !is_numeric($str[$idx + 1]))
+				exit("syntax error");
 		}
-		for ($i = 0; $i < strlen($str); $i++)
-		{
-			if (!is_numeric($str[$i]))
-				break;
+		$str = preg_replace('/\s+/', '',  $str);
+		while($i < strlen($str)){
 			$a .= $str[$i];
-		}
-		for ($i = (strlen($a) + 1); $i < strlen($str); $i++)
-		{
-			if (!is_numeric($str[$i]))
+			$i++;
+			if(isSign($str[$i]))
 				break;
-			$b .= $str[$i];
 		}
+		$sign= $str[$i];
+		$i++;
+		if(!is_numeric($str[$i]) && $str[$i] != "-")
+			exit("syntax error");
+		while($i < strlen($str)){
+			$b .= $str[$i];
+			$i++;
+			if(isSign($str[$i]))
+				break;
+		}
+		if (!is_numeric($a) && !is_numeric($b))
+			exit("syntax error");
 		ft_arth($a, $b, $sign);
 	}
 	else

@@ -7,7 +7,6 @@
 		while (++$i < $argc)
 			$arr[] = $argv[$i];
 		$i = 0;
-		$found = 0;
 		foreach($arr as $key)
 		{
 			if (strpos($key, $needle) !== false)
@@ -22,10 +21,9 @@
 					$i++;
 				}
 				$i = 0;
-				$found = 1;
 			}
 		}
-		if ($found == 1)
+		if ($val)
 			echo "$val\n";
 	}
 ?>

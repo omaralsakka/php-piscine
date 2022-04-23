@@ -1,1 +1,1 @@
-SELECT ROUND(AVG(seats), 0) AS 'average' FROM db_oabdelfa.cinema;
+SELECT CEILING(AVG(nb_seats)) AS 'average' FROM cinema;

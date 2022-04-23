@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?php
-	$x = 0;
-	while (++$x < $argc)
+	for ($x = 1; $x < $argc; $x++)
 		echo "$argv[$x]\n";
 ?>

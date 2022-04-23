@@ -6,61 +6,81 @@ html {
 	width: 10%;
 }
 
+#menus {
+	display: flex;
+	/* justify-content: center; */
+	width: 90%;
+	margin: auto 5px;
+}
+
 .dropdown {
-	width: 50%;
-	margin: auto;
-	text-align: center;
-	margin-top: 2%;
+	margin: 1vw 10px;
 }
 
-.menu {
-	display: none;
-	background-color: #f1f1f1;
-	box-shadow: 10px 10px 12px gray;
-	border: 2px inset rgb(223, 187, 187);
-	margin-top: 2%;
+#in.dropdown{
+	margin: 1px;
 }
 
+#in2.dropdown{
+	margin: 1px;
+}
+
+#inner.dropbtn{
+	font-size: 20px;
+}
 .dropbtn {
-	font-size: 50px;
+	font-size: 30px;
+	border: 1px outset rgb(223, 187, 187);
+	background-color: beige;
 	color: #0076a0;
 	font-family: 'Courier New', monospace;
 	border-radius: 10px;
-	border: 5px inset rgb(223, 187, 187);
-	background-color: beige;
 }
 
-.row {
-	display: flex;
-	align-items: center;
-	text-align: center;
+.menu-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 200px;
+	margin: auto;
+	margin-top: 2px;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgb(131, 131, 131);
 }
 
-.s_img {
-	padding: 10px;
-	border: 1px inset goldenrod;
-	max-width: 20%;
-	max-height: 20%;
+.sd{
+	border: solid 1px lightblue;
+	border-radius: 5px;
+	margin: 1px;
 }
 
-.s_txt {
-	display:block;
+.menu-content a {
+	display: block;
+	color: rgb(56, 56, 56);
+	text-decoration: none;
 	font-size: 20px;
 	font-family: 'Courier New', monospace;
-	color: rgb(56, 56, 56);
-	margin-left: 1vw;
-	width: 70%;
-	
+	margin: auto;
+	padding: 5px;
 }
 
-.price {
+#image{
+	display: block;
+	margin-left: auto;
+	width:100px;
+}
+
+.dropbtn:hover{
+	background-color: rgb(248, 235, 211);
+}
+
+.dropdown[id="out"]:hover .menu-content[id="mOut"]{
+	display: block;
+}
+.dropdown[id="in"]:hover .menu-content[id="in1"]{
 	display: inline-block;
-	font-family: 'Courier New', monospace;
-	font-size: 30px;
-	color:#0076a0;
-	margin: 4% 0 0 0;
 }
-
-.dropdown:hover .menu {display: block;}
-.dropdown:hover .dropbtn {background-color: rgb(248, 235, 211);}
-.s_img:hover {opacity: 0.8;}
+.dropdown[id="in2"]:hover .menu-content[id="in2"]{
+	display: inline-block;
+}

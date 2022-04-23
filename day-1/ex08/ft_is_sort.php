@@ -5,6 +5,7 @@
 		sort($tmp_arr);
 		if ($tmp_arr !== $tab)
 			return false;
-		return true;
+		else
+			return true;
 	}
 ?>

@@ -5,7 +5,7 @@
 		$tmp = trim($argv[1]);
 		if (strpos($tmp, ' '))
 		{
-			$str = preg_replace('/\s\s+/', " ", $tmp);
+			$str = preg_replace('/\s+/', " ", $tmp);
 			$arr = explode(" ", $str);
 			$str = array_shift($arr);
 			array_push($arr, $str);

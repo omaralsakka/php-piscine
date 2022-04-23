@@ -1,2 +1,3 @@
-SELECT REVERSE(SUBSTRING (phone_number, 2, LEN(phone_number))) AS 'rebmunenohp' FROM db_oabdelfa.distrib
+SELECT SUBSTRING(REVERSE(phone_number), 1, 9) as 'rebmunenohp' 
+FROM distrib
 WHERE phone_number LIKE "05%";

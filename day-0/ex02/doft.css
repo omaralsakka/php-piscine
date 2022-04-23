@@ -22,7 +22,7 @@ html {
 
 #loupe {
 	margin-left: auto;
-	margin-top: auto;
+	margin-top: 1.5vh;
 }
 
 #glasses {
@@ -43,24 +43,21 @@ html {
 }
 
 .leftbar {
-	width: 7.3vw;
-	/* width: 8.2%; */
+	width: 7vw;
 	height: 46vh;
 	float: left;
-	margin: 3vh -100% 0 13.5%;
-	/* margin: 2%;
-	margin-right: -100%;
-	margin-left: 13.5%;
-	margin-top: 3vh; */
+	margin: 3vh -100% 0 14.5%;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
 }
-
+.images_block{
+	padding-top: 10px;
+}
 .l_img
 {
 	display: block;
-	max-width: 50%;
+	max-width: 51%;
 	max-height: 50%;
 	margin: auto;
 	padding: 5%;
@@ -71,13 +68,13 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 #clust {
 	width: 53%;
-	margin: 3vh auto auto auto;
+	margin: 3vh 0 auto 0;
 	border: solid #8f8f8f;
 	border-width: 10px;
 	border-radius: 10px;
@@ -85,10 +82,10 @@ html {
 }
 
 .rightbar {
-	width: 8.2%;
+	width: 7vw;
 	height: 46vh;
 	float: right;
-	margin: -63.6vh 13.5% 0 -100%;
+	margin: -63.6vh 14.5% 10vh 0;
 	background: #8f8f8f;
 	border-radius: 10px;
 	box-shadow: 10px 10px 12px black;
@@ -113,36 +110,13 @@ html {
 	padding: 5%;
 	text-align: center;
 }
-
 #bricks{
-	display: block;
-	margin-top: -5%;
-	width: 100%;
-}
-
-#b1
-{
-    width: 25%;
-    float: left;
-    
-}
-
-#b2
-{
-    width: 25%;
-    float: left;
-}
-
-#b3
-{
-    width: 25%;
-	float: left;
-}
-
-#b4
-{
-    width: 25%;
-	float: left;
+	background-image: url("resources/brick.jpg");
+	background-size: 1.5vw;
+	width: 10vw;
+	max-width: 89%;
+	height: 7vh;
+	margin: auto;
 }
 
 #lowerbox {

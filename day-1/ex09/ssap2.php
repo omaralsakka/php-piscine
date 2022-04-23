@@ -1,38 +1,34 @@
 #!/usr/bin/php
 <?php
-	$i = 0;
+	$arg = 1;
 	$arr = array();
-	if ($argc < 2)
-		exit (0);
-	while (++$i < $argc)
+	function compare($str1, $str2)
 	{
-		$str = preg_replace('/\s\s+/', ' ',  $argv[$i]);
-		$str = trim($str);
-		if (strpos($str, " "))
+		$i = 0;
+		$line = "abcdefghijklmnopqrstuvwxyz0123456789!\"
+				#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+		while (($i < strlen($str1)) || ($i < strlen($str2)))
 		{
-			$arr2 = explode(' ', $str);
-			$arrtemp = $arr;
-			$arr = array_merge($arrtemp, $arr2);
-		}	
-		else
-			array_push($arr, $str);
+			$str1_sorted = stripos($line, $str1[$i]);
+			$str2_sorted = stripos($line, $str2[$i]);
+			if ($str1_sorted > $str2_sorted)
+				return (1);
+			else if ($str1_sorted < $str2_sorted)
+				return (-1);
+			else
+				$i++;
+		}
 	}
-	foreach($arr as $word)
+	foreach ($argv as $elem)
 	{
-		if (('a' <= $word[0] && $word[0] <= 'z') || ('A'<= $word[0] && $word[0] <= 'Z'))
-			$alph[] = $word;
-		elseif (is_numeric($word))
-			$numb[] = $word;
-		else
-			$chars[] = $word;
+		if ($arg++ > 1)
+		{
+			$temp = preg_split("/ +/", trim($elem));
+			if ($temp[0] != "")
+				$arr = array_merge($arr, $temp);
+		}
 	}
-	sort($alph, (SORT_STRING | SORT_FLAG_CASE));
-	sort($numb, SORT_STRING);
-	sort($chars);
-	foreach($alph as $val)
-		echo "$val\n";
-	foreach($numb as $val)
-		echo "$val\n";
-	foreach($chars as $val)
-		echo "$val\n";
+	usort($arr, "compare");
+	foreach ($arr as $elem)
+		echo "$elem"."\n";
 ?>
