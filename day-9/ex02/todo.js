@@ -28,14 +28,13 @@ function listing(textValue, ix){
 // to add a list item through the button and creating cookie of it afterwards
 function addItem(){
 	let toDo = prompt("Please enter a to do item");
-	if (toDo != null){
-		if (toDo.length){
+	let sp = toDo.search(/^[\s]*$/);
+	if (toDo != null && (toDo.search(/^[\s]*$/) < 0)){
 			listing(toDo, idx);
 			var nwCookie = idx + "=" + toDo + 
 			"; expires=Thu, 18 Dec 2050 12:00:00 UTC; secure; path=/;";
 			idx++;
 			document.cookie = nwCookie;
-		}
 	}
 }
 
