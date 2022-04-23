@@ -1,4 +1,4 @@
-# DAY 01
+# DAY 03
 
 ## :diamond_shape_with_a_dot_inside: **Day's explanation:**
 
