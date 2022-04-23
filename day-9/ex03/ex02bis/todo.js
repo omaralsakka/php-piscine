@@ -15,13 +15,11 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#New").on("click", function(){
 		let toDo = prompt("Please enter a to do item");
-		if (toDo != null){
-			if (toDo.length){
+		if (toDo != null && toDo.search(/^[\s]*$/) < 0){
 				let elem = $("<div class=\"li\" id=" + idx + ">" + toDo + "</div>");
 				$("#ft_list").prepend(elem);
 				$.cookie(idx, toDo);
 				idx++;
-			}
 		}
 	})
 })

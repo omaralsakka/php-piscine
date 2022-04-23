@@ -1,14 +1,18 @@
 var idx = 0;
 
+//re-calling the cookies from the dom
 if (document.cookie && document.cookie != ""){
+	
 	var Arr = document.cookie.split(';');
+	
 	for (var k = 0; k < Arr.length; k++){
 		var values = Arr[k].split("=");
-		listing(values[1], k);
+		listing(values[1], values[0]);
 	}
 	idx = k;
 }
 
+//creating a list item
 function listing(textValue, ix){
 	var dv = document.createElement("DIV");
 	dv.setAttribute('id', ix);
@@ -21,6 +25,7 @@ function listing(textValue, ix){
 	ftList.insertBefore(dv, ftList.children[0]);
 }
 
+// to add a list item through the button and creating cookie of it afterwards
 function addItem(){
 	let toDo = prompt("Please enter a to do item");
 	if (toDo != null){
@@ -34,6 +39,7 @@ function addItem(){
 	}
 }
 
+// to remove list item and remove its cookie
 function removeItem(clicked_id){
 	if (confirm("Confirm to remove the \"TO DO item?\"")){
 		element = document.getElementById(clicked_id);
