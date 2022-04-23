@@ -12,3 +12,9 @@ red, green & blue.
 ⭐️ EX03 -> re-do all the previous exercises but with JQuery.
 
 ⭐️ EX04 -> re-do the todo list but with AJAX instead of cookies.
+
+## :warning: **NOTE:**
+
+1- For the cookies to work, specially with google chrome, you have to run the html file with live server "vs code extension" or through some kind of server.
+
+2- For AJAX the files needs to be running in a server folder, for example "mamp/apache2/htdocs".
