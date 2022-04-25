@@ -5,7 +5,7 @@ php-piscine/Hive Helsinki
 
 This is a bootcamp for 2 weeks, focused mainly on learning PHP and it's elements such as "REGEX, SESSIONS, GET/POST, Cookies, basic functions" and OOP. Additionally we learn HTML, CSS, Javascript JQuery & Ajax to create web applications and finally MYSQL. The idea is to access the basics of frontend and backend creation of websites.
 
-![image](https://user-images.githubusercontent.com/81321172/165088302-52fc6ec3-c626-42e6-ae8f-e5408ba089af.png)
+![grades](https://user-images.githubusercontent.com/81321172/165089790-34aef3e3-ace3-4003-9ee9-694f1b8479d2.jpg)
 
 
 ⭐️ DAY00 -> HTML, CSS
