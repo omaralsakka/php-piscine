@@ -31,3 +31,34 @@ This is a bootcamp for 2 weeks, focused mainly on learning PHP and it's elements
 ## :warning: **NOTE:**
 
 some days like day 08 and the rush projects which are on the weekends I have decided not to attend them.
+
+## :high_brightness: **SOME WEB RESULTS**
+
+**⭐️ DAY00:**
+
+:arrow_right: EX00:
+
+<img src="day-0/exercises_results/ex00.png" width="50%"/>
+
+:arrow_right: EX01/03:
+
+<img src="day-0/exercises_results/ex01.png" width="50%"/>
+
+:arrow_right: EX02/05:
+
+<img src="day-0/exercises_results/ex05.png" width="50%"/>
+
+:arrow_right: EX04:
+
+<img src="day-0/exercises_results/ex04.png" width="50%"/>
+
+
+**⭐️ DAY09:**
+
+:arrow_right: EX01: 
+
+<img src="day-9/exercises_results/ex01-01bis.png" width="50%" />
+
+:arrow_right: EX02: 
+
+<img src="day-9/exercises_results/ex02-02bis-04.png" width="50%" />
